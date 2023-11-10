@@ -1,0 +1,44 @@
+Dagger 2 Annotations (Used in Conjunction with Hilt):
+@Inject:
+
+Used in Dagger to request and inject dependencies.
+@Module:
+
+Used to define Dagger modules.
+@Provides:
+
+Used in Dagger modules to annotate methods that provide dependencies.
+@Component:
+
+Defines a Dagger component.
+@Scope:
+
+Defines a custom scope for managing the lifecycle of dependencies.
+@Qualifier:
+
+Creates custom qualifiers for distinguishing between multiple dependencies of the same type.
+@Named:
+
+A specific qualifier annotation for providing a named dependency.
+@Singleton:
+
+Predefined scope annotation indicating that the annotated component or dependency should have a singleton scope.
+@Binds:
+
+Used in Dagger modules to declare abstract methods that Dagger will implement.
+@BindsInstance:
+
+Used in Dagger components to bind an instance to the component at the time of creation.
+@Multibinds:
+
+Used in Dagger modules to create a multibound set or map.
+@IntoSet:
+
+Used in Dagger modules to contribute a single value to a set.
+@IntoMap:
+
+Used in Dagger modules to contribute a value to a map.
+@MapKey:
+
+Used to define a custom annotation for use as a key in a map.
+These annotations demonstrate the combination of Hilt and Dagger 2 annotations in Android development, where Hilt simplifies the usage of Dagger for dependency injection in Android applications.

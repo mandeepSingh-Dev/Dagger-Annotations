@@ -1,0 +1,48 @@
+
+Dagger 2, a popular dependency injection framework for Java and Android, includes several annotations that are key to its functionality. Here's a list of some commonly used Dagger 2 annotations:
+
+@Inject:
+
+Used to request dependencies. Constructors, methods, and fields can be annotated with @Inject to indicate that Dagger should provide those dependencies.
+@Module:
+
+Used to define classes whose methods provide dependencies. Modules are used to group related providers together.
+@Provides:
+
+Used in Dagger modules to annotate methods that provide dependencies. Dagger invokes these methods to get instances of the requested types.
+@Component:
+
+Used to define an interface for a Dagger component. Components are responsible for providing instances of injected classes.
+@Scope:
+
+Used to define a custom scope for managing the lifecycle of dependencies. Scopes are often used to control the lifespan of objects within a Dagger component.
+@Qualifier:
+
+Used to create custom qualifiers for distinguishing between multiple dependencies of the same type.
+@Named:
+
+A specific qualifier annotation for providing a named dependency. It is often used in conjunction with @Qualifier for more descriptive annotations.
+@Singleton:
+
+A predefined scope annotation indicating that the annotated component or dependency should have a singleton scope.
+@Component.Builder:
+
+Used to create a builder interface for a Dagger component. It allows for more flexible and customizable component instantiation.
+@Binds:
+
+Used in Dagger modules to declare abstract methods that Dagger will implement. It is often used to bind interfaces to their concrete implementations.
+@BindsInstance:
+
+Used in Dagger components to bind an instance to the component at the time of creation.
+@Multibinds:
+
+Used in Dagger modules to create a multibound set or map. It is often used when aggregating multiple providers into a collection.
+@IntoSet:
+
+Used in Dagger modules to contribute a single value to a set.
+@IntoMap:
+
+Used in Dagger modules to contribute a value to a map.
+@MapKey:
+
+Used to define a custom annotation for use as a key in a map. It is often used with @IntoMap to specify the key type.
